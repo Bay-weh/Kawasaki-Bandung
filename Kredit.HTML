@@ -73,59 +73,170 @@ function moveSlide(step) {
   <li>Foto Copy SKU/SIUP/TDP</li>
 </ul>
 <br>
-<table border="4" cellpadding="5" cellspacing="0" style="width:1340px; border-collapse: collapse; text-align:center; font-family:sans-serif;">
-  <thead style="background-color:#b6fcb6;">
-    <tr>
-      <th style="width:25%;">TYPE</th>
-      <th style="width:15%;">UANG MUKA</th>
-      <th style="width:10%;">12</th>
-      <th style="width:10%;">18</th>
-      <th style="width:10%;">24</th>
-      <th style="width:10%;">30</th>
-      <th style="width:10%;">36</th>
-    </tr>
-      <tr style="background-color:#ffffff;">
-      <td style="text-align:left;">KLX 150SM</td>
-      <td>6,800,000</td><td>3,644,000</td><td>2,202,000</td><td>1,721,000</td><td>1,427,000</td><td>1,223,000</td>
-    </tr>
-    <tr style="background-color:#e7fbe7;">
-      <td style="text-align:left;">KLX 150</td>
-      <td>6,000,000</td><td>2,644,000</td><td>1,802,000</td><td>1,521,000</td><td>1,227,000</td><td>1,023,000</td>
-    </tr>
-    <tr style="background-color:#ffffff;">
-      <td style="text-align:left;">KLX 150 SE</td>
-      <td>6,500,000</td><td>3,026,000</td><td>2,062,000</td><td>1,666,000</td><td>1,344,000</td><td>1,126,000</td>
-    </tr>
-    <tr style="background-color:#e7fbe7;">
-      <td style="text-align:left;">KLX 250R</td>
-      <td>12,000,000</td><td>3,762,000</td><td>2,692,000</td><td>2,118,000</td><td>1,698,000</td><td>1,432,000</td>
-    </tr>
-    <tr style="background-color:#ffffff;">
-      <td style="text-align:left;">KLX 250SM</td>
-      <td>13,000,000</td><td>5,225,000</td><td>3,567,000</td><td>2,798,000</td><td>2,307,000</td><td>1,982,000</td>
-    </tr>
-    <tr style="background-color:#e7fbe7;">
-      <td style="text-align:left;">NINJA FI 250</td>
-      <td>11,500,000</td><td>6,257,000</td><td>4,358,000</td><td>3,417,000</td><td>2,816,000</td><td>2,418,000</td>
-    </tr>
-    <tr style="background-color:#ffffff;">
-      <td style="text-align:left;">VERSYS 650</td>
-      <td>30,000,000</td><td>12,091,000</td><td>8,423,000</td><td>6,395,000</td><td>5,061,000</td><td>4,346,000</td>
-    </tr>
-   <tr style="background-color:#e7fbe7;">
-      <td style="text-align:left;">VERSYS 250</td>
-      <td>16,000,000</td><td>6,057,000</td><td>4,076,000</td><td>3,050,000</td><td>2,124,000</td><td>2,075,000</td>
-    </tr>
-    <tr style="background-color:#ffffff;">
-      <td style="text-align:left;"> ZX25R</td>
-      <td>19,000,000</td><td>6,229,000</td><td>4,324,000</td><td>3,398,000</td><td>2,797,000</td><td>2,397,000</td>
-    </tr>
-  
-</table>
 
+ <meta charset="UTF-8">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f4f4f4;
+    }
+    h1 {
+      color: #006400;
+    }
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    label {
+      font-weight: bold;
+      margin-top: 10px;
+      display: block;
+    }
+    select, input[type="text"], input[type="email"], input[type="tel"], textarea {
+      width: 50%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    textarea {
+      resize: vertical;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    .form-group-inline {
+      display: flex;
+      justify-content: space-between;
+    }
+    .form-group-inline div {
+      width: 48%;
+    }
+    .form-group-inline select {
+      width: 100%;
+    }
+    .form-group-inline input {
+      width: 100%;
+    }
+    .form-group-inline textarea {
+      width: 100%;
+    }
+    .form-group-inline label {
+      display: block;
+    }
+    .form-group-inline input[type="checkbox"] {
+      width: auto;
+    }
+    button {
+      background-color: #006400;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #004d00;
+    }
+  </style>
+</head>
+<body>
 
+  <h1>Permohonan Kredit</h1>
+  <form action="#" method="POST">
+    <div class="form-group">
+      <label for="kategori">Pilih Kategori Kendaraan*</label>
+      <select id="kategori" name="kategori" required>
+        <option value="sepeda_motor">Sepeda Motor</option>
+      </select>
+    </div>
 
+    <div class="form-group">
+      <label for="tahun">Pilih Tahun*</label>
+      <select id="tahun" name="tahun" required>
+        <option value="2025">2025</option>
+        <option value="2024">2024</option>
+        <option value="2023">2023</option>
+        <option value="2022">2022</option>
+        <option value="2021">2021</option>
+        <option value="2020">2020</option>
+      </select>
+    </div>
 
+    <div class="form-group">
+      <label for="model">Pilih Model*</label>
+      <select id="model" name="model" required>
+        <option value="ninja_250">Ninja 250</option>
+        <option value="ninja_e">Ninja e-1</option>
+        <option value="ninja_zx10r">Ninja ZX-10R</option>
+        <option value="ninja_zx25r">Ninja ZX-25R</option>
+        <option value="ninja zx6r">Ninja ZX-6R</option>
+        <option value="stockman">Stockman</option>
+        <option value="versys1100">Versys 1100</option>
+        <option value="versys650">Versys 650</option>
+        <option value="versys250">Versys-X 250</option>
+        <option value="vulcan 600">Vulcan S</option>
+        <option value="z e1">Z e-1</option>
+        <option value="z1000">Z1000</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="dealer">Pilih Dealer*</label>
+      <select id="dealer" name="dealer" required>
+        <option value="PT. Citrakarya Pranata Jl. Soekarno-Hatta No. 727, Bandung, 3273">PT. Citrakarya Pranata Jl. Soekarno-Hatta No. 727, Bandung, 3273</option>
+        <option value="Jl. Kopo Bihbul No.7 KM.6,5, Bandung, 3273">Jl. Kopo Bihbul No.7 KM.6,5, Bandung, 3273</option>
+        <option value="Jl. Achmad Yani No. 717 - 719, Bandung, 3273">Jl. Achmad Yani No. 717 - 719, Bandung, 3273</option>
+        <option value="Jl. Jl. Separako No. 1, Bandung, 40392 ">Jl. Jl. Separako No. 1, Bandung, 40392</option>
+        <option value="Jl. Jl. Pajajaran No. 135, Bandung">Jl. Jl. Pajajaran No. 135, Bandung</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="nama_depan">Nama Depan*</label>
+      <input type="text" id="nama_depan" name="nama_depan" required>
+    </div>
+
+    <div class="form-group">
+      <label for="nama_belakang">Nama Belakang*</label>
+      <input type="text" id="nama_belakang" name="nama_belakang" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Alamat Email*</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="kota">Kota*</label>
+      <input type="text" id="kota" name="kota" required>
+    </div>
+
+    <div class="form-group">
+      <label for="provinsi">Provinsi*</label>
+      <input type="text" id="provinsi" name="provinsi" required>
+    </div>
+
+    <div class="form-group">
+      <label for="kode_pos">Kode Pos*</label>
+      <input type="text" id="kode_pos" name="kode_pos" required>
+    </div>
+
+    <div class="form-group">
+      <label for="telepon">Telepon*</label>
+      <input type="tel" id="telepon" name="telepon" required>
+    </div>
+
+    <div class="form-group">
+     
+<form action="/submit" method="post">
+  <input type="submit" value="Submit">
+</form>
 
 <br>
 <hr>
@@ -169,4 +280,5 @@ function moveSlide(step) {
 <hr>
 
 </HTML>
+
 
