@@ -1,0 +1,130 @@
+  
+       head {
+            box-sizing: border-box;
+            }
+  /* ini Style headernya */
+        header {
+            background-image: url("versy1100.jpg");
+            background-repeat:no-repeat;
+            background-position: center;
+            background-size: cover;
+            padding: 200px;
+               }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+ nav {
+	background-color:#00FF00; 
+	height:50px; 
+	line-height:50px; 
+	position:relative;
+	width:1336px;
+	margin:auto;
+	margin-top:5px;
+}
+
+nav ul {
+	list-style:none;
+}
+nav ul li a {
+	float:left; 
+	width:308px; 
+	display:block; 
+	text-align:center; 
+	color:#FFF; 
+	text-decoration:none; 
+	text-transform:uppercase;
+}
+
+nav ul li a:hover {
+	background-color:#008000; 
+	display:block;
+}
+
+nav ul li:hover ul {
+	display:block;
+}
+nav ul ul {
+	display:none; 
+	list-style:none; 
+	position:absolute; 
+	background-color:#00FF00;
+	left:348px; 
+	top:50px; 
+	width:268px;
+}
+
+nav ul ul li a {
+	float:none; 
+	display:block; 
+	padding-left:0px; 
+	text-align: left; 
+	width:280px;
+}
+
+nav ul ul li a:hover {
+	color:#990;
+}
+       
+        
+        nav a
+        {
+            color: white;
+        }
+ 
+        article {
+            float: left;
+            padding: 50px;
+            width:100%;
+            background-color: #f1f1f1;
+            height: 600px;
+            /* hanya untuk contoh saja */
+        }
+ 
+        /* Clear floats after the columns */
+        section:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+ 
+        /* Style the footer */
+        footer {
+            background-color: green;
+            padding: 5px;
+            text-align: center;
+            color: white;
+        }
+ 
+        /* Responsive layout - buat 2 kolom/kotak */
+        @media (max-width: 600px) {
+ 
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+<div style="display: flex; gap: 20px; justify-content: center;">
+  <div style="text-align: center;">
+    <a href="meguro250.HTML">
+      <img src="meguro250.jpg" alt="Meguro250" width="200" height="150">
+    </a>
+    <p>Meguro250</p>
+  </div>
+
+  <div style="text-align: center;">
+    <a href="CBR500R.HTML">
+      <img src="cbr500r.jpg" alt="CBR 500R" width="200" height="150">
+    </a>
+    <p>CBR 500R</p>
+  </div>
+
+  <div style="text-align: center;">
+    <a href="MT07.HTML">
+      <img src="mt07.jpg" alt="Yamaha MT-07" width="200" height="150">
+    </a>
+    <p>Yamaha MT-07</p>
+  </div>
+   

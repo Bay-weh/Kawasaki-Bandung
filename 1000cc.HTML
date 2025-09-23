@@ -1,0 +1,100 @@
+<HTML>
+<HEAD>
+<link rel="stylesheet" href="layout.css"
+<header class="slider">
+  <div class="slides">
+    <div class="slide"><img src="bannermotor.jpg"  width="1360" height="250" ></div>
+    <div class="slide"><img src="bannermotor2.jpg"  width="1360" height="250" ></div>
+    <div class="slide"><img src="bannermotor3.jpg" width="1360" height="250" ></div>
+    <div class="slide"><img src="bannermotor4.jpg" width="1360" height="250" ></div>
+    <div class="slide"><img src="bannermotor5.jpg" width="1360" height="250" ></div>
+    <div class="slide"><img src="bannermotor6.jpg" width="1360" height="250" ></div>
+    <div class="slide"><img src="bannermotor7.jpg" width="1360" height="250" ></div>
+  </div>
+
+  <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+  <button class="next" onclick="moveSlide(1)">&#10095;</button>
+</header>
+<script>
+let currentSlide = 0;
+showSlide(currentSlide);
+
+function showSlide(index) {
+  let slides = document.querySelectorAll(".slide");
+  if (index >= slides.length) currentSlide = 0;
+  if (index < 0) currentSlide = slides.length - 1;
+  slides.forEach(s => s.style.display = "none");
+  slides[currentSlide].style.display = "block";
+}
+
+function moveSlide(step) {
+  currentSlide += step;
+  showSlide(currentSlide);
+}
+</script>
+
+</HEAD>
+
+<BODY>
+
+<nav>
+<ul>
+ <li><a href="About.HTML" style="color: white;">|About</a></li>
+<li> <a href="1000cc.HTML" style="color: white;">|Motorcycle</a>
+<ul>
+ <li><a href="electric.HTML" style="color: white;">|Motor Electric</a></li>
+ <li><a href="150cc.HTML" style="color: white;">|Motor 150cc</a></li>
+ <li><a href="250cc.HTML" style="color: white;">|Motor 250cc</a></li>
+ <li><a href="600cc.HTML" style="color: white;">|Motor 600cc</a></li>
+ <li><a href="index.HTML" style="color: white;">|Home</a></li>
+</ul>
+<li><a href="Service.HTML" style="color: white;">|Service Center</a></li>
+ <li><a href="Kredit.HTML" style="color: white;">|Kredit</a></li>
+</li>
+</nav>
+<body>
+
+<table border="0">
+  <tr>
+
+    <td>
+      <a href="versys1100.HTML"> 
+        <img class="hover-shrink" src="versys1100.jpg" width="450" height="250"> </a>
+        <center><p> Versys 1100 </p></center>
+<td>
+      <a href="z1000.HTML"> 
+        <img class="hover-shrink" src="z1000.jpg" width="450" height="250"> </a>
+        <center><p> Z 1000 </p></center>
+
+<td>
+      <a href="zx10.HTML"> 
+        <img class="hover-shrink" src="zx10.jpg" width="450" height="250"> </a>
+        <center><p> ZX 10R </p></center>
+<tr>
+
+   </table>  
+
+<br>
+<hr>
+
+<h5> Dealer Location </h5>                                                                            
+<p><li>PT. Citrakarya Pranata Jl. Soekarno-Hatta No. 727, Bandung, 3273 </p></li>   
+<p> <li>Jl. Kopo Bihbul No.7 KM.6,5, Bandung, 3273 </p></li>
+<p> <li>Jl. Achmad Yani No. 717 - 719, Bandung, 3273</p></li>
+<p> <li>Jl. Jl. Separako No. 1, Bandung, 40392 </p></li>
+<p> <li>Jl. Jl. Pajajaran No. 135, Bandung </p></li>
+
+
+<br>
+<hr>
+<center> Klik Untuk Unduh Aplikasi Kawasaki </center>
+<br>
+<center><a href="https://play.google.com/store/apps/details?id=co.id.kawasaki.indonesia&hl=id">
+  <img class="hover-shrink" src="gplay.jpg" alt="Google Play" width="130" height="35">
+</a>
+ <a href="https://apps.apple.com/id/app/kawasaki-indonesia/id1481300851">
+  <img class="hover-shrink" src="appstore.jpg" alt="App Store" width="130" height="35">
+</center>
+
+</BODY>
+</HTML>
