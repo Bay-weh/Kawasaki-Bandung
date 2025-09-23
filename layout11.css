@@ -4,7 +4,7 @@
             }
   /* ini Style headernya */
         header {
-            background-image: url("Service.jpg");
+            background-image: url("service.jpg");
             background-repeat:no-repeat;
             background-position: center;
             background-size: cover ;
@@ -127,4 +127,5 @@ nav ul ul li a:hover {
     </a>
     <p>Yamaha MT-07</p>
   </div>
+
    
